@@ -13,7 +13,7 @@ using namespace std;
 #include <math.h>
 
 #define iniClusters 5  //初始类聚的个数
-
+typedef int int32;
 using namespace std;
 
 //定义6个使用的参数
@@ -264,7 +264,7 @@ void ISOData(Point p[], int n)
 			for(int i = 0; i < nClusters; i++)
 			{
 				//计算该类的标准偏差
-				c.at(i).calStErr();    
+				c.at(i).calStErr();
 				//计算该类标准差的最大分量
 				double mt = c.at(i).sigma.x > c.at(i).sigma.y? c.at(i).sigma.x : c.at(i).sigma.y;
 				maxsigma.push_back(mt);
@@ -285,7 +285,7 @@ void ISOData(Point p[], int n)
 						c.at(i).center.x = c.at(i).center.x + split * c.at(i).sigma.x;
 						c.at(i).center.y = c.at(i).center.y + split * c.at(i).sigma.y;
 						break;
-					}  
+					}
 				}
 			}
 		}
@@ -295,7 +295,7 @@ void ISOData(Point p[], int n)
 		{
 			int size = nClusters * (nClusters - 1);
 			//需要合并的聚类个数
-			int cnt = 0;    
+			int cnt = 0;
 			MergeInfo *info = new MergeInfo[size];
 			for(int i = 0; i < nClusters; i++)
 			{
@@ -359,7 +359,7 @@ void ISOData(Point p[], int n)
 						c.at(u).center.y /= c.at(u).nSamples;
 					}
 				}
-			}  
+			}
 
 			//删除合并后的聚类
 			vector<Cluster>::iterator id = c.begin();
@@ -372,7 +372,7 @@ void ISOData(Point p[], int n)
 			}
 
 			//合并多少次就删除多少个
-			nClusters -= nTimes; 
+			nClusters -= nTimes;
 			assert(nClusters == c.size());
 			delete[] info;
 			delete[] flag;
