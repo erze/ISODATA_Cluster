@@ -1,0 +1,25 @@
+﻿生成启动时间为 2017/7/14 21:23:27。
+     1>项目“E:\Git_project\ISODATA_Cluster\ISOData\ISOData.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         H:\install_locate\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ISOData.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         H:\install_locate\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ISOData.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ISOData.cpp
+         ISOData.cpp
+     1>e:\git_project\isodata_cluster\isodata\isodata.cpp(3): warning C4627: “#include <iostream>”:  在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>e:\git_project\isodata_cluster\isodata\isodata.cpp(106): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 h:\install_locate\vs2013\vc\include\stdio.h(283) : 参见“scanf”的声明
+     1>e:\git_project\isodata_cluster\isodata\isodata.cpp(174): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\git_project\isodata_cluster\isodata\isodata.cpp(220): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\git_project\isodata_cluster\isodata\isodata.cpp(236): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\git_project\isodata_cluster\isodata\isodata.cpp(395): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 h:\install_locate\vs2013\vc\include\stdio.h(283) : 参见“scanf”的声明
+       Link:
+         H:\install_locate\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Git_project\ISODATA_Cluster\ISOData\Debug\ISOData.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Git_project\ISODATA_Cluster\ISOData\Debug\ISOData.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Git_project\ISODATA_Cluster\ISOData\Debug\ISOData.lib" /MACHINE:X86 Debug\ISOData.obj
+         Debug\stdafx.obj
+         ISOData.vcxproj -> E:\Git_project\ISODATA_Cluster\ISOData\Debug\ISOData.exe
+     1>已完成生成项目“E:\Git_project\ISODATA_Cluster\ISOData\ISOData.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.80
